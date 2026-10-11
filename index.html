@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17172e" />
+  <title>A Thousand Little Reasons — For Swazy ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sky-glow sky-glow-one"></div>
+  <div class="sky-glow sky-glow-two"></div>
+  <canvas id="starCanvas" aria-hidden="true"></canvas>
+  <div class="fireflies" id="fireflies" aria-hidden="true"></div>
+  <div class="music-pill">
+    <span class="music-dot" id="musicDot"></span>
+    <span id="musicLabel">a little song for you</span>
+    <button id="musicButton" class="music-button" type="button" aria-label="Play or pause background music">♫ <span id="musicButtonText">Play music</span></button>
+  </div>
+  <!-- Add your own legally obtained audio file named "die-for-you.mp3" to this folder. -->
+  <audio id="loveSong" loop preload="none">
+    <source src="die-for-you.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main>
+    <section class="hero page-section" id="home">
+      <div class="tiny-label"><span>✦</span> A LITTLE FAIRYTALE, MADE FOR YOU <span>✦</span></div>
+      <div class="moon" aria-hidden="true"><span></span></div>
+      <p class="eyebrow">to my favourite human,</p>
+      <h1>Swazy<span class="title-heart">♡</span></h1>
+      <p class="hero-subtitle">if the world feels a little too heavy,<br>come rest here for a while.</p>
+      <div class="hero-flower" aria-hidden="true">✿</div>
+      <button class="storybook-button" id="beginButton" type="button">Step into our little world <span>↗</span></button>
+      <p class="scroll-note">there's a little love waiting for you below ↓</p>
+    </section>
+
+    <section class="intro page-section" id="garden">
+      <div class="section-kicker">CHAPTER I · THE ENCHANTED GARDEN</div>
+      <h2>For the days that<br><em>feel a little harder.</em></h2>
+      <p class="section-copy">I know life hasn't been the gentlest with you lately, my love. I can't magically make every difficult thing disappear, but I can remind you that you don't have to face every feeling pretending you're fine.</p>
+      <p class="section-copy">So I made you a tiny garden. No expectations here. You can be quiet, you can be tired, you can just exist. You are loved here, exactly as you are.</p>
+      <div class="garden-scene" aria-label="An enchanted garden with flowers and glowing fireflies">
+        <div class="garden-moon"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="garden-path"></div>
+        <div class="flower flower-a"><i></i><b></b></div>
+        <div class="flower flower-b"><i></i><b></b></div>
+        <div class="flower flower-c"><i></i><b></b></div>
+        <div class="flower flower-d"><i></i><b></b></div>
+        <div class="flower flower-e"><i></i><b></b></div>
+        <span class="garden-spark spark-a">✧</span><span class="garden-spark spark-b">✦</span><span class="garden-spark spark-c">✧</span>
+        <span class="garden-caption">even the night grows flowers 🌷</span>
+      </div>
+      <button class="text-button" id="bloomButton" type="button">Make the garden bloom ✧</button>
+      <div id="bloomMessage" class="soft-reveal" aria-live="polite">A little reminder: you don't have to earn rest, love, or gentleness. You deserve them already.</div>
+    </section>
+
+    <section class="smile page-section" id="smile">
+      <div class="section-kicker">CHAPTER II · MY FAVOURITE SIGHT</div>
+      <div class="sun-heart" aria-hidden="true">☼</div>
+      <h2>Do you know what<br><em>my favourite thing is?</em></h2>
+      <p class="section-copy centered">Out of all the beautiful things in this enormous world, there's one little thing that could make my whole day brighter.</p>
+      <button class="reveal-button" id="smileButton" type="button">Tap to find out, baby ♡</button>
+      <div class="smile-reveal" id="smileReveal" aria-live="polite">
+        <span class="big-heart">♡</span>
+        <h3>YOUR SMILE.</h3>
+        <p>That smile of yours, Swazy. The one I wish I could protect from every heavy thought. I love seeing you happy, but please remember: you never have to force a smile for me. Even when it's missing, you are still my favourite person.</p>
+      </div>
+    </section>
+
+    <section class="letter-section page-section" id="letter">
+      <div class="section-kicker">CHAPTER III · A LETTER, JUST FOR YOU</div>
+      <h2>Open when you need<br><em>a little extra love.</em></h2>
+      <p class="section-copy centered">A letter from my heart to yours.</p>
+      <button class="envelope" id="letterButton" type="button" aria-label="Open your love letter">
+        <span class="envelope-flap"></span><span class="envelope-heart">♡</span>
+        <span class="envelope-hint">open me, my love</span>
+      </button>
+      <article class="letter-paper" id="letterPaper" aria-hidden="true">
+        <div class="letter-decoration">✧ · ♡ · ✧</div>
+        <p class="letter-dear">My dearest Swazy,</p>
+        <p>I wish I could gather every difficult thing that's been weighing on your heart and give you a moment of peace. I know I can't fix everything, and I won't pretend that a few words can make it all disappear. But I hope you never forget that you don't have to carry every feeling alone.</p>
+        <p>You mean so much more to me than I could ever fit into one little website. You're my favourite notification, my comfort person, and one of the loveliest parts of my world. Your smile is genuinely one of my favourite sights ever—not because you have to be happy all the time, but because when you're happy, there's a light in you that I adore.</p>
+        <p>And on the days when that light feels far away, please be gentle with yourself. You are still wonderful when you're quiet. You are still precious when you're tired. You are still so, so loved when you don't know what to say.</p>
+        <p>If I could wish one thing for you, it would be that life gives your heart more soft days, more reasons to laugh, and more moments where you can breathe without everything feeling so heavy. Until then, I hope I can be a small safe place for you—a person you can talk to, sit quietly with, or simply be yourself around.</p>
+        <p>Thank you for being you, Swazy. I love you in the loud, silly moments and in the quiet ones too. Not just the smiling version of you. <em>All of you.</em></p>
+        <p class="letter-signoff">all my love, always ♡<br><span>your girl</span></p>
+        <div class="letter-decoration bottom-decoration">with every little star in the sky ✧</div>
+      </article>
+    </section>
+
+    <section class="reasons page-section" id="reasons">
+      <div class="section-kicker">CHAPTER IV · LITTLE THINGS I ADORE</div>
+      <h2>A few reasons<br><em>you are so loved.</em></h2>
+      <p class="section-copy centered">Tap a star. I've tucked a tiny reason inside each one.</p>
+      <div class="star-buttons">
+        <button class="reason-star" data-reason="Your smile can turn an ordinary moment into one I want to remember." aria-label="Reason one">✦<span>01</span></button>
+        <button class="reason-star" data-reason="The little details that make you unmistakably, wonderfully you." aria-label="Reason two">✧<span>02</span></button>
+        <button class="reason-star" data-reason="The moments we share, even the simple ones that nobody else would understand." aria-label="Reason three">✦<span>03</span></button>
+        <button class="reason-star" data-reason="You don't have to be perfect to be deeply loved. You just have to be you." aria-label="Reason four">✧<span>04</span></button>
+        <button class="reason-star" data-reason="Because somehow, in this enormous world, my heart chose you as one of its favourite places." aria-label="Reason five">✦<span>05</span></button>
+      </div>
+      <div class="reason-note" id="reasonNote" aria-live="polite">Choose a little star, my love ✨</div>
+    </section>
+
+    <section class="finale page-section" id="finale">
+      <div class="finale-orbit" aria-hidden="true"><span>♡</span><span>✧</span><span>♡</span></div>
+      <div class="section-kicker">THE LAST PAGE · BUT NEVER THE LAST OF MY LOVE</div>
+      <h2>Whenever the world<br>gets loud, <em>come back here.</em></h2>
+      <p class="final-message">Let this tiny fairytale remind you that someone is cheering for you, thinking of you, and wishing you softer days. You don't have to smile right now, baby. Just take a breath. You're loved.</p>
+      <p class="script-signature">I love you, Swazy.</p>
+      <button class="storybook-button" id="heartsButton" type="button">Send you a sky full of hearts ♡</button>
+      <p class="footer-note">made with a very full heart, just for you · ♡</p>
+    </section>
+  </main>
+  <div id="heartBurst" class="heart-burst" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
